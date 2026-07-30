@@ -4,8 +4,8 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="w-full border-t border-border bg-white">
-      <div className="max-w-[1440px] mx-auto px-8 py-12">
-        <div className="flex items-start justify-between">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12">
           <div className="flex flex-col gap-3">
             <Link href="/" className="flex items-center gap-2">
               <Image src="/logo.png" alt="JobHuntr" width={32} height={32} className="rounded-[8px]" />
@@ -15,7 +15,7 @@ export function Footer() {
               AI-powered job hunting assistant. Find, score, and research jobs — all in one place.
             </p>
           </div>
-          <div className="flex gap-12">
+          <div className="flex gap-8 sm:gap-12">
             <div className="flex flex-col gap-3">
               <h4 className="text-sm font-semibold text-text-primary">Product</h4>
               <Link href="/find-jobs" className="text-sm text-text-secondary hover:text-accent transition-colors">
@@ -35,7 +35,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-border">
+        <div className="mt-8 sm:mt-10 pt-6 border-t border-border">
           <p className="text-xs text-text-muted">
             &copy; {new Date().getFullYear()} JobHuntr. All rights reserved.
           </p>

@@ -18,15 +18,15 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="px-8 py-20 bg-background">
+    <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 bg-background">
       <div className="max-w-[1440px] mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-text-darkest">How it works</h2>
-          <p className="mt-4 text-lg text-text-secondary">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-text-darkest">How it works</h2>
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-text-secondary">
             Three steps from signup to application.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {steps.map((item) => (
             <div key={item.step} className="flex flex-col items-center text-center gap-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white text-lg font-semibold">

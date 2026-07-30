@@ -33,19 +33,19 @@ const features = [
 
 export function Features() {
   return (
-    <section className="px-8 py-20 bg-white">
+    <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-[1440px] mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-text-darkest">Everything you need to land the job</h2>
-          <p className="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-text-darkest">Everything you need to land the job</h2>
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-text-secondary max-w-2xl mx-auto">
             JobHuntr handles the research and matching so you can focus on what matters — getting hired.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="flex flex-col gap-4 p-6 bg-surface rounded-2xl border border-border shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]"
+              className="flex flex-col gap-4 p-5 sm:p-6 bg-surface rounded-2xl border border-border shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]"
             >
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-accent-light text-accent">
                 {feature.icon}
